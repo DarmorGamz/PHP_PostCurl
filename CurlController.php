@@ -45,7 +45,7 @@ final class CurlController {
             'SessionId' => 'xxxxxxxxxxxx'
         ];
         // Send Request
-        if(!$aResponse = CurlController::SendPostSync($aBody)) { return false; }
+        if(!$aResponse = CurlController::SendPostSync($sUrl, $aBody)) { return false; }
 
         // Do stuff with response.
 
